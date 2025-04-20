@@ -214,4 +214,4 @@ const ImageGenerate = async () => {
 
 export default ImageGenerate;
 
-export const revalidate  = 60
+export const revalidate  = 10
