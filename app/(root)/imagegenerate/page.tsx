@@ -4,6 +4,7 @@ import cloudinary from "cloudinary";
 import Link from "next/link";
 import CloudinaryImage from "@/components/cloudinarycomponents/CloudinaryImage";
 import Image from "next/image";
+import { revalidatePath } from "next/cache";
 
 interface SearchResult {
 	public_id: string;
@@ -212,3 +213,5 @@ const ImageGenerate = async () => {
 };
 
 export default ImageGenerate;
+
+export const revalidate  = 60
