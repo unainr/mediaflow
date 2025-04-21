@@ -1,18 +1,19 @@
 'use client';
 import { CldImage } from "next-cloudinary";
 import React, { useState } from "react";
+import { Skeleton } from "../ui/skeleton";
 
 const CloudinaryImage = ({ public_id }: { public_id: string }) => {
 	const [isLoading, setIsLoading] = useState(true);
 
 	return (
 		<>
-			{isLoading && (
+		<div className="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+		{isLoading && (
 				<div className="absolute inset-0">
-					<h1>loading.....</h1>
+					<Skeleton className="w-full h-full object-cover rounded-lg" />
 				</div>
 			)}
-		<div className="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
 			<CldImage
 				width="720"
 				height="480"
