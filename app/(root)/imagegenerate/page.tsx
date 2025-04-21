@@ -215,6 +215,8 @@ const ImageGenerate = async () => {
 
 export default ImageGenerate;
 
+export const revalidate = 5;
+
 export const metadata: Metadata = {
 	title: "Image Generate | Media Flow",
 	description: "Browse and manage your digital assets in Media flow's intuitive gallery interface",
