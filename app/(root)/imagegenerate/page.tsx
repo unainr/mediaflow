@@ -4,6 +4,7 @@ import cloudinary from "cloudinary";
 import Link from "next/link";
 import CloudinaryImage from "@/components/cloudinarycomponents/CloudinaryImage";
 import Image from "next/image";
+import { Metadata } from "next";
 
 
 interface SearchResult {
@@ -214,3 +215,8 @@ const ImageGenerate = async () => {
 
 export default ImageGenerate;
 
+export const metadata: Metadata = {
+	title: "Image Generate | Media Flow",
+	description: "Browse and manage your digital assets in Media flow's intuitive gallery interface",
+  };
+  
