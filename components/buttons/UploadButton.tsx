@@ -9,7 +9,7 @@ const UploadButton = () => {
 
 	const handleSuccess = (result: any) => {
 		setTimeout(() => {
-			route.push("/imagegenerate");
+			route.refresh();
 		}, 1000);
 	};
 	const handleError = (error: any) => {
