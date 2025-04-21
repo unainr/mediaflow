@@ -3,7 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import CloudinaryImage from "@/components/cloudinarycomponents/CloudinaryImage";
 import cloudinary from "cloudinary";
 import Link from "next/link";
-import { useUser } from "@clerk/nextjs";
+
 
 interface SearchResult {
 	public_id: string;
@@ -187,5 +187,5 @@ export default async function Home() {
 	);
 }
 
-export const revalidate  = 10
+
 
