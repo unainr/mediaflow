@@ -1,4 +1,5 @@
 "use server"
+import { revalidatePath } from "next/cache";
 import Stripe from "stripe"
 
 interface CheckoutProps {
@@ -40,3 +41,10 @@ export const checkoutCredits = async (transaction:CheckoutProps) => {
         console.log(error)
     }
 }
+
+
+export async function revalidateGallery() {
+    // Revalidate the homepage where the gallery is displayed
+    revalidatePath('/imagegenerate')
+    return { success: true }
+  }
