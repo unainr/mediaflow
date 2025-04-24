@@ -45,6 +45,6 @@ export const checkoutCredits = async (transaction:CheckoutProps) => {
 
 export async function revalidateGallery() {
     // Revalidate the homepage where the gallery is displayed
-    revalidatePath('/imagegenerate')
+    revalidatePath('/(root)/imagegenerate', 'page')
     return { success: true }
   }
