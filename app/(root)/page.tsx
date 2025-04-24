@@ -47,11 +47,10 @@ export default async function Home() {
       >
         <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-indigo-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 z-10"></div>
         <div className="absolute bottom-0 left-0 right-0 p-5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 z-20 flex flex-col">
-          <span className="text-white font-medium text-lg">Transform This</span>
           <div className="flex mt-2 space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
             <span className="px-2 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs text-white">Edit</span>
-            <span className="px-2 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs text-white">Enhance</span>
-            <span className="px-2 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs text-white">Share</span>
+            <span className="px-2 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs text-white">Generative Fill</span>
+            <span className="px-2 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs text-white">Gray Scale</span>
           </div>
         </div>
         <div className="aspect-[4/5] overflow-hidden">

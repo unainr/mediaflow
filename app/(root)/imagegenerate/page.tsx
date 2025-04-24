@@ -69,7 +69,7 @@ const ImageGenerate = async () => {
 							{/* Attention-grabbing button with animation */}
 							<div className="relative group transform hover:scale-105 transition-all duration-300">
 								<div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-70 group-hover:opacity-100 animate-pulse"></div>
-								<div className="relative px-6 py-3 bg-black bg-opacity-50 backdrop-blur-sm rounded-lg border border-white/10">
+								<div className="relative px-6 py-3 dark:bg-black bg-opacity-50 backdrop-blur-sm rounded-lg border dark:border-white/10">
 									
 										<UploadButton />
 								
@@ -156,7 +156,7 @@ const ImageGenerate = async () => {
 								<Link
 									href={`/edit/${public_id}`}
 									key={public_id}
-									className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md hover:shadow-xl transition-all duration-300">
+									className="group relative overflow-hidden rounded-xl  shadow-md hover:shadow-xl transition-all duration-300">
 									<div className="aspect-square overflow-hidden">
 										<div className="w-full h-full transform group-hover:scale-105 transition-transform duration-500">
 											<CloudinaryImage public_id={public_id} />
